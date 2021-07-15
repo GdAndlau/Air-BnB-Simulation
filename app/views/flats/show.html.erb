@@ -1,0 +1,14 @@
+<h1> This is a flat <h1>
+
+<%= render "form", flat: @flat %>
+
+<ul>
+  <li><%= @flat.name %></li>
+  <li><%= @flat.address %></li>
+  <li><%= @flat.price_per_night %></li>
+  <li><%= @flat.number_of_guests %></li>
+</ul>
+
+
+<button><%= link_to "destroy", flat_path, method: :delete %></button>
+
